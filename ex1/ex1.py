@@ -8,7 +8,7 @@ model = YOLO('yolov8n-pose.pt')
 image_path = 'ex1.jpg'
 image = cv2.imread(image_path)
 
-#推論実行
+#推論を行う
 results = model(image)
 
 # 骨格とキーポイントを描画（顔は無視）
