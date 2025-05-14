@@ -4,7 +4,7 @@ from ultralytics import YOLO
 # YOLOv8 Pose モデルの読み込み
 model = YOLO('yolov8n-pose.pt')
 
-# 画像読み込み
+# 画像読み込
 image_path = 'ex1/ex1.jpg'
 image = cv2.imread(image_path)
 
