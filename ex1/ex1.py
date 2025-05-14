@@ -8,10 +8,9 @@ model = YOLO('yolov8n-pose.pt')
 image_path = 'ex1/ex1.jpg'
 image = cv2.imread(image_path)
 
-#推論を行う
 results = model(image)
 
-# 骨格とキーポイントを描画（顔は無視）
+# 骨格とキーポイントを描画
 for result in results:
     keypoints = result.keypoints.xy[0]  # 1人目の人物のキーポイント
 
