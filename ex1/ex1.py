@@ -5,7 +5,7 @@ from ultralytics import YOLO
 model = YOLO('yolov8n-pose.pt')
 
 # 画像読み込み
-image_path = 'ex1.jpg'
+image_path = 'ex1/ex1.jpg'
 image = cv2.imread(image_path)
 
 #推論を行う
@@ -42,4 +42,4 @@ for result in results:
             cv2.line(image, (x1, y1), (x2, y2), (255, 0, 0), 2)  # 青い線で描画
 
 # 結果画像の保存
-cv2.imwrite('out_ex1.jpg', image)
+cv2.imwrite('ex1/out_ex1.jpg', image)
