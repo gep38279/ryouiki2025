@@ -18,7 +18,7 @@ class_names = results[0].names
 # 画像の読み込み
 img = cv2.imread(path)
 
-# 一番大きなpersonのバウンディングボックスを探す
+# 一番大きなpersonのバウンディングボックスを探索
 max_area = 0
 max_box = None
 
